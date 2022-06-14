@@ -52,3 +52,70 @@ footer {
     background: #ebebeb;
     box-shadow:  -40px 40px 80px #c5c5c5, 40px -40px 80px #ffffff;
 }
+
+.softboxtwo {
+    border-radius: 46px;
+    background: rgba(218, 157, 110, .5);
+    box-shadow:  -24px 24px 48px rgba(170, 122, 86) -24px -24px 48px, rgba(255, 192, 134);
+}
+
+.handwriting {
+    font-family: 'Rock Salt', cursive;
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "",
+    background-color: rgba(0,0,0,0)
+}
+
+
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100vh;
+    }
+}
+
+.top-nav-collapse {
+    background-color: #1b1b1b !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1b1b1b !important;
+    }
+}
+
+h1 {
+    letter-spacing: 8px;
+}
+
+h5 {
+    letter-spacing: 3px;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}

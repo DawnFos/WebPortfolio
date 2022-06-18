@@ -1,6 +1,5 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url("images/space.jpg");
     background-color: #ebebeb;
 }
 
@@ -18,12 +17,17 @@ header h1 {
 }
 
 header h2 {
+    font-family: 'Montserrat', sans-serif;
     color: #ebebeb;
 }
 
 footer {
     background-image: linear-gradient(#ebebeb, #cecdcd, #4c4c4d, #2b2b2b);
     padding: 20px 0;
+}
+
+.footertwo {
+    background-color: #2b2b2b;
 }
 
 .jumbotron {

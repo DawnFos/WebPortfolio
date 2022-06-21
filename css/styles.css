@@ -67,6 +67,57 @@ footer {
     font-family: 'Rock Salt', cursive;
 }
 
+.bviolet {
+    background-color: #2b2b2b;
+    color: #65655E;
+}
+
+.angry {
+    color: #CA1551;
+}
+
+.irked {
+    color: #FB4D3D;
+}
+
+.indiffrent {
+    color: #EAC435;
+}
+
+.cool {
+    color: #03CEA4;
+}
+
+.love {
+    color: #7FDEFF;
+}
+
+.btn-outline {
+    color: #EAC435;
+    background-color: rgba(0,0,0,0);
+    border-color: #EAC435;
+    /* font-weight: bold; */
+    letter-spacing: 0.05em;
+}
+
+/* .btn-outline {
+    color: #EAC435;
+    background-color: #ffffff;
+    border-color: #EAC435;
+    font-weight: bold;
+    border-radius: 0;
+} */
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+    background: #EAC435;
+    color: #ffffff;
+    border-color: #EAC435;
+    
+}
+
 .stretched-link::after {
     position: absolute;
     top: 0;

@@ -24,14 +24,14 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="container">
-        <a class="navbar-brand" href="#"><strong>Dawn Fós</strong></a>
+        <a class="navbar-brand" href="index.html"><strong>Dawn Fós</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="bio.html">Bio</a>
@@ -39,10 +39,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="resume.html">Resume</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="inspiration.html">Inspiration</a>
-            </li>
             <li class="nav-item active">
+                <a class="nav-link" href="#">Inspiration</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="bulletin.html">Bulletin</a>
             </li>
             </ul>
@@ -53,12 +53,13 @@
         </div>
     </nav>
 
-    <!-- modals -->
+    <!-- Modal -->
     <div id="contactModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
+            
             <div class="modal-content bviolet text-light">
                 <div class="modal-header">
-                    <h3 class="modal-title display-5 indiffrent">Message Dawn</h3>
+                    <h3 class="modal-title display-5 indiffrent">Message <strong>Dawn</strong></h3>
                     <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -75,7 +76,7 @@
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label class="sr-only" for="phone">Telephone</label>
-                                    <input type="text" class="form-control form-control-sm" id="phone" placeholder="Enter Phone number">
+                                    <input type="text" class="form-control form-control-sm" id="phone" placeholder="Enter Phone Number">
                                 </div>
                                 <div class="form-check text-right px-4">
                                     <input type="checkbox" class="form-check-input" id="callCheck">
@@ -83,7 +84,7 @@
                                 </div>
                                 <div class="form-group col-12">
                                     <label for="message">Message</label>
-                                    <textarea class="form-control" id="message" rows="6"></textarea>
+                                    <textarea class="form-control" id="message" rows="6" placeholder="Words of enlightenment here..."></textarea>
                                 </div>
                                 <div class="form-group col-12">
                                     <label class="text-center" for="formControlRange">How much do you like armadillos?</label>
@@ -106,7 +107,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
     <!-- CONTENT -->
     <div class="container">
@@ -116,32 +117,75 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="">
         <div class="container">
-            <div class="row">             
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5 class="text-muted">Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a class="text-light" href="#"> Home</a></li>
-                        <li><a class="text-light" href="#"> Bio</a></li>
-                        <li><a class="text-light" href="#"> Resume</a></li>
-                        <li><a class="text-light" href="#"> Inspiration</a></li>
-                        <li><a class="text-light" href="#"> News</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5 class="text-muted">Social</h5>
-                    <a class="btn btn-social-icon btn-github" href="https://github.com/DawnFos"><i class="fa-brands fa-github"></i></a>
-                    <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/good.morning.dawn/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/dawn_fos"><i class="fa fa-twitter"></i></a>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link text-light" href="tel:+16154406467"><i class="fa fa-phone"></i> 1-615-440-6467</a><br />
-                    <a role="button" class="btn btn-link text-light" href="mailto:dawn.lee.fos@gmail.com"><i class="fa fa-envelope-o"></i> dawn.lee.fos@gmail.com</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="accordian w-100 d-lg-flex" id="accordian">
+                            <!-- Menu -->
+                            <div class="col-lg-4 col-md-12">
+                                <a href="#menu" class="nav-link p-0 d-block d-lg-none d-xl-none" data-toggle="collapse">
+                                    <h4 class="text-light">Menu</h4>
+                                </a>
+                                <div class="text-light d-none d-lg-block d-xl-block">
+                                    <h4>Menu</h4>
+                                </div>
+                                <div class="collapse d-lg-flex" id="menu" data-parent="#accordian">
+                                    <ul class="list-unstyled d-flex w-100 justify-content-between">
+                                        <li><a class="text-light" href="index.html"> Home</a></li>
+                                        <li><a class="text-light" href="bio.html"> Bio</a></li>
+                                        <li><a class="text-light" href="resume.html"> Resume</a></li>
+                                        <li><a class="text-light" href="#"> Inspiration</a></li>
+                                        <li><a class="text-light" href="bulletin.html"> Bulletin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Social -->
+                            <div class="col-lg-4 col-md-12">
+                                <a href="#social" class="nav-link p-0 d-block d-lg-none d-xl-none" data-toggle="collapse">
+                                    <h4 class="text-light">Social</h4>
+                                </a>
+                                <div class="text-light d-none d-lg-block d-xl-block text-center">
+                                    <h4>Social</h4>
+                                </div>
+                                <div class="collapse text-light d-lg-flex" id="social" data-parent="#accordian">
+                                    <ul class="list-unstyled d-flex w-100 justify-content-center">
+                                        <li><a target="_blank" class="btn btn-social-icon btn-github text-light" href="https://github.com/DawnFos"><i class="fa-brands fa-github"></i></a></li>
+                                        <li><a target="_blank" class="btn btn-social-icon btn-instagram text-light" href="https://www.instagram.com/good.morning.dawn/"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a target="_blank" class="btn btn-social-icon btn-twitter text-light" href="https://twitter.com/dawn_fos"><i class="fa fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Contact -->
+                            <div class="col-lg-4 col-md-12">
+                                <a href="#contact" class="nav-link p-0 d-block d-lg-none d-xl-none" data-toggle="collapse">
+                                    <h4 class="text-light">Contact</h4>
+                                </a>
+                                <div class="text-light d-none d-lg-block d-xl-block text-right">
+                                    <h4>Contact</h4>
+                                </div>
+                                <div class="collapse d-lg-flex" id="contact"  data-parent="#accordian">
+                                    <ul class="list-unstyled d-flex w-100 text-center">
+                                        <li><a role="button" class="btn btn-link text-light" href="mailto:dawn.lee.fos@gmail.com"> dawn.lee.fos@gmail.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="container-fluid">
+        <div class="row footertwo">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center align-items-center">
+                    <span class="p-1 text-muted"><small>Dawn Fós &copy; Copyright 2022</small></span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Script -->
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->

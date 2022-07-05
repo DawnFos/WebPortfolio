@@ -1,6 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-image: url("../images/fron.jpeg");
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
     background-color: #2b2b2b;
     color: rgba(14, 1, 14, 1);
 }
@@ -71,7 +74,7 @@ footer {
 
 .bviolet {
     background-image: url(../images/fron.jpeg);
-    background-blend-mode: lighten;
+    background-blend-mode: hard-light;
     background-color:rgba(14, 1, 14, 1);
     color: #65655E;
 }
@@ -83,33 +86,83 @@ footer {
     color: #655e60;
 }
 
+.bvioletthree {
+    background-color: rgba(39, 7, 39, 0.5);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color:#c5c5c5
+}
+
 .angry {
-    color: #CA1551;
+    color: #663366;
 }
 
 .irked {
-    color: #FB4D3D;
+    color: #993366;
 }
 
 .indiffrent {
-    color: #EAC435;
+    color: #a7526e;
 }
 
 .cool {
-    color: #03CEA4;
+    color: #f8a276;
 }
 
 .love {
-    color: #7FDEFF;
+    color: #cccccc;
+}
+
+.circleimg {
+    border-radius: 50%;
+}
+
+.softboxthree {
+    border-radius: 46px;
+    background: rgba(39, 7, 39, 0.5);
+    box-shadow:  -20px 20px 40px rgb(70, 31, 70, .9), 20px -20px 40px rgba(14, 1, 14, 0.712);
+}
+
+.dawn {
+    color:#c5c5c5
+}
+.colordawn {
+    background-color: rgba(39, 7, 39, 0.5);
+    color: #cccccc;
+    font-family: 'Montserrat', sans-serif;
+}
+.colordawn:hover {
+    background: #cccccc;
+    color: rgba(39, 7, 39, 1);
+    background-color: #cccccc;
+    border-color: #cccccc;
+}
+
+.dawnbtn {
+    background: #cccccc;
+    color: rgba(39, 7, 39, 1);
+    background-color: #cccccc;
+    border-color: #cccccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dawnbtn:disabled,
+.dawnbtn[disabled] {
+    background: #cccccc;
+    color: rgba(39, 7, 39, 1);
+    background-color: #cccccc;
+    border-color: #cccccc;
 }
 
 .btn-outline {
-    color: #EAC435;
+    color: #f8a276;
     background-color: rgba(0,0,0,0);
-    border-color: #EAC435;
+    border-color: #f8a276;
     /* font-weight: bold; */
     letter-spacing: 0.05em;
 }
+
+
 
 /* .btn-outline {
     color: #EAC435;
@@ -123,9 +176,9 @@ footer {
 .btn-outline:active,
 .btn-outline:focus,
 .btn-outline.active {
-    background: #EAC435;
-    color: #ffffff;
-    border-color: #EAC435;
+    background: #f8a276;
+    color: #2b2b2b;
+    border-color: #f8a276;
     
 }
 

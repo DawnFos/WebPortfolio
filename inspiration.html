@@ -42,9 +42,9 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#">Inspiration</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="bulletin.html">Bulletin</a>
-            </li>
+            </li> -->
             </ul>
             <span class="navbar-text ml-auto">
                 <a role="button" data-toggle="modal" data-target="#contactModal">Get in Touch</a>
@@ -59,7 +59,7 @@
             
             <div class="modal-content bviolet text-light">
                 <div class="modal-header">
-                    <h3 class="modal-title display-5 indiffrent">Message <strong>Dawn</strong></h3>
+                    <h3 class="modal-title display-5 cool">Message <strong>Dawn</strong></h3>
                     <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -95,12 +95,12 @@
                                             <i class="fa-regular fa-face-smile-beam fa-4x cool"></i>
                                             <i class="fa-regular fa-face-grin-hearts fa-4x love"></i>
                                         </div>
-                                    <input type="range" class="form-control-range mt-3" id="formControlRange">
+                                    <input type="range" class="form-control-range mt-3 cool" id="formControlRange">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-outline btn-sm ml-1">Send</button>
+                                <button type="button" class="btn btn-outline btn-sm ml-1"><strong>SEND</strong></button>
                             </div>
                         </form>
                     </div>
@@ -112,12 +112,257 @@
     <!-- CONTENT -->
     <div class="container">
         <div class="text-center mt-4 mb-4">
-            <h1>Welcome</h1>
-            <p class="mb-4">Message of enlightenment and fortitude. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+            <h1><strong>Spinning</strong> Gears</h1>
+            <p class="mb-4">Some things that inspire and drive my work.</p>
+            <div id="accordion" class="mb-5  text-light">
+                <div class="card bvioletthree text-light">
+                    <div class="card-header" id="headingArt">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseArt" aria-expanded="true" aria-controls="collapseArt">
+                        <h2>Art</h2>
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseArt" class="collapse show" aria-labelledby="headingArt" data-parent="#accordion">
+                        <div class="card-body">
+                            <div id="carArt" class="carousel slide" data-ride="carousel">
+
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#carArt" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carArt" data-slide-to="1"></li>
+                                    <li data-target="#carArt" data-slide-to="2"></li>
+                                </ul>
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/The-Hero-by-Marina-Abramovic-©-CIRCA.jpeg" height="500" alt="The Hero by Marina Abramovic">
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <h3 class="col btn dawnbtn disabled"><strong>Marina Abramovic's</strong> NFT</h3>
+                                            </div>
+                                            <a target="_blank" href="https://www.artnews.com/art-news/news/marina-abramovic-nft-the-hero-basel-interview1234631675-1234631675/" class="btn colordawn">The Hero</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/studio-ins-xueguo-yang.png" height="500" alt="Fractial Art by Xueguo Yang" class="height 500px">
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <h3 class="col btn dawnbtn disabled"><strong>Xueguo Yang</strong> Fractals</h3>
+                                            </div>
+                                            <a target="_blank" href="https://blogs.nvidia.com/blog/2022/07/05/in-the-nvidia-studio-july-05/" class="btn colordawn">‘Into the Void’</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <iframe src="https://player.vimeo.com/video/5904032?h=ed8fe4f1f1&autoplay=1" width="800" height="500" frameborder="0" allow=" fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                        <script src="https://player.vimeo.com/api/player.js"></script>
+                                        <div class="carousel-caption">
+                                            <h3><a href="https://vimeo.com/5904032" class="btn colordawn">Coyote. <strong>Joseph Beuys</strong> in America</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#carArt" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carArt" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+                            <div class="row flex-row-reverse">
+                                <button class="btn colordawn mr-5" id="carouselButton">
+                                    <i class="fa fa-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card bvioletthree text-light">
+                        <div class="card-header" id="headingScience">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-light" data-toggle="collapse" data-target="#collapseScience" aria-expanded="false" aria-controls="collapseScience">
+                            <h2>Science</h2> 
+                            </button>
+                        </h5>
+                        </div>
+                    <div id="collapseScience" class="collapse" aria-labelledby="headingScience" data-parent="#accordion">
+                        <div class="card-body">
+                            <div id="carScience" class="carousel slide" data-ride="carousel">
+
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#carScience" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carScience" data-slide-to="1"></li>
+                                    <li data-target="#carScience" data-slide-to="2"></li>
+                                </ul>
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/gold sensor.png" height="500" alt="Stretchy sensor">
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <h3 class="col btn dawnbtn disabled mx-4"><strong>Stretchy </strong>sensor</h3>
+                                            </div>
+                                            <a target="_blank" href="https://www.u-tokyo.ac.jp/focus/en/press/z0508_00223.html" class="btn colordawn">Researchers created a special ultrathin sensor, spun from gold, that can be attached directly to the skin without irritation or discomfort. The sensor can measure different biomarkers or substances to perform on-body chemical analysis.</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <iframe width="850" height="500" src="https://www.youtube.com/embed/TfMP5BUdKpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <h3  class="col btn dawnbtn disabled"><strong>Leah Broussard</strong> on dark matter.</h3>
+                                            </div> 
+                                            <a target="_blank" href="https://www.ornl.gov/news/physicists-confront-neutron-lifetime-puzzle" class="btn colordawn">Neutron Lifetime Puzzle</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/heart-image.png" height="500" alt="Repaired Mouse heart">
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <h3 class="col btn dawnbtn disabled"><strong>Regenerate</strong> Heart Muscle</h3>
+                                            </div>
+                                            <a target="_blank" href="https://uh.edu/news-events/stories/2022-news-articles/june-2022/06162022-cardiac-cell-study.php" class="btn colordawn"">Discovery has Potential to Become ‘Powerful Clinical Strategy’ for Treating Heart Disease</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#carScience" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carScience" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+                            <div class="row flex-row-reverse">
+                                <button class="btn colordawn mr-5" id="carouselButton">
+                                    <i class="fa fa-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bvioletthree text-light">
+                    <div class="card-header" id="headingTech">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-light" data-toggle="collapse" data-target="#collapseTech" aria-expanded="false" aria-controls="collapseTech">
+                        <h2>Tech</h2>
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseTech" class="collapse" aria-labelledby="headingTech" data-parent="#accordion">
+                        <div class="card-body">
+                            <div id="carTech" class="carousel slide" data-ride="carousel">
+
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#carTech" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carTech" data-slide-to="1"></li>
+                                    <li data-target="#carTech" data-slide-to="2"></li>
+                                </ul>
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <iframe width="850" height="500" src="https://www.youtube.com/embed/z0UHdAI3sXI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <h3 class="col btn dawnbtn disabled"><strong>VISTA</strong> simulator</h3>
+                                            </div>
+                                            <a target="_blank" href="https://news.mit.edu/2022/researchers-release-open-source-photorealistic-simulator-autonomous-driving-0621" class="btn colordawn">Autonomous driving simulates with live video, LiDAR and Event cameras</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/skin sensor.jpg" height="500" alt="Auditory skin sensor" class="height 500px m-1">
+                                        <div class="carousel-caption">
+                                            <div class="ro">
+                                                <h3  class="col btn dawnbtn disabled"><strong>Wearable</strong> tech</h3>
+                                            </div>
+                                            <a target="_blank" href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202109545" class="btn colordawn">Auditory Skin Sensor</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/fish,robots.png" height="500" alt="Plastic eating robots" class="height 500px m-1">
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <h3 class="col btn dawnbtn disabled"><strong>Fish-shaped</strong> robots</h3>
+                                            </div>
+                                            <a target="_blank" href="https://www.acs.org/content/acs/en/pressroom/newsreleases/2022/june/tiny-fish-shaped-robot-swims-around-picking-up-microplastics.html" class="btn colordawn">‘swimming’ robots pick up microplastics</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#carTech" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carTech" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                                
+                            </div>
+                            <div class="row flex-row-reverse">
+                                <button class="btn colordawn mr-5" id="carouselButton">
+                                    <i class="fa fa-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card col m-4 softboxthree border-0" style="width: 20rem;">
+                <img  class="softboxthree card-img-top mt-3" src="images/then_now.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="dawn"><strong>Then</strong> and Now</h4>
+                    <p class="dawn">When I think about my creativity. I think about growing up in this place. Where everything is possible. Where I can create whatever, I want, because I witness and experience other people creating their own visions. This is the power of Art, to Free others.</p>
+                </div>
+            </div>
+            <div class="card col m-4 softboxthree border-0">
+                <img  class="softboxthree card-img-top mt-3" src="images/bug.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="dawn"><strong>Lullaby</strong> of the South</h4>
+                    <p class="dawn">Cicadas fill sweet thick summer air with a hum, iconic to the American South. An ecosystem rich in diversity lends to opportunities for growth and wonderment. I would jump at a research opportunity that involved this truly unique region.</p>
+                </div>
+            </div>
+            <div class="card col m-4 softboxthree border-0">
+                <img  class="softboxthree card-img-top mt-3" src="images/Read.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="dawn"><strong>Nose</strong> in a book</h4>
+                    <p class="dawn">Always reading, I am conscious of the unique complexities that technology has implanted on our ability to read and find enjoyment in doing so. I hope to join the efforts to further bridge the literacy gap in and through technology.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col m-4 softboxthree border-0">
+                <img  class="softboxthree card-img-top mt-3" src="images/hike.JPEG" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="dawn"><strong>Respecting</strong> nature</h4>
+                    <p class="dawn">Ever searching for a balance away from technology. I look forward to the ever-evolving ways science and technology can not only coexist but bolster our natural spaces.</p>
+                </div>
+            </div>
+            <div class="card col m-4 softboxthree border-0">
+                <img  class="softboxthree card-img-top mt-3" src="images/cycle.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="dawn"><strong>Movement</strong> is meditation</h4>
+                    <p class="dawn">My best insights and problem solving often hit, atop my cycle, on long stretches of road or ascending a rocky incline in the mountains. Peace and inspiration seem to abound beneath perspiration.</p>
+                </div>
+            </div>
+            <div class="card col m-4 softboxthree border-0">
+                <img  class="softboxthree card-img-top mt-3" src="images/print.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="dawn"><strong>Everything</strong> is a process</h4>
+                    <p class="dawn">All facets of my work and life are drenched in the fingerprints of process. I embrace this and see it as one of my strengths to work both creatively and methodically through problems.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer class="">
+    <footer class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -137,7 +382,7 @@
                                         <li><a class="text-light" href="bio.html"> Bio</a></li>
                                         <li><a class="text-light" href="resume.html"> Resume</a></li>
                                         <li><a class="text-light" href="#"> Inspiration</a></li>
-                                        <li><a class="text-light" href="bulletin.html"> Bulletin</a></li>
+                                        <!-- <li><a class="text-light" href="bulletin.html"> Bulletin</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -167,7 +412,7 @@
                                 </div>
                                 <div class="collapse d-lg-flex" id="contact"  data-parent="#accordian">
                                     <ul class="list-unstyled d-flex w-100 text-center">
-                                        <li><a role="button" class="btn btn-link text-light" href="mailto:dawn.lee.fos@gmail.com"> dawn.lee.fos@gmail.com</a></li>
+                                        <li><a role="button" class="btn btn-link text-light" href="mailto:dawn@dawnfos.com"> dawn@dawnfos.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -181,7 +426,7 @@
         <div class="row footertwo">
             <div class="col-md-12">
                 <div class="d-flex justify-content-center align-items-center">
-                    <span class="p-1 text-muted"><small>Dawn Fós &copy; Copyright 2022</small></span>
+                    <span class="p-1 text-muted"><small>Dawn Fós &copy; Copyright <span id="date"></span>. All rights reserved</small></span>
                 </div>
             </div>
         </div>
@@ -192,7 +437,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

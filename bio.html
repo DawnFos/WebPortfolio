@@ -42,9 +42,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="inspiration.html">Inspiration</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="bulletin.html">Bulletin</a>
-            </li>
+            </li> -->
             </ul>
             <span class="navbar-text ml-auto">
                 <a role="button" data-toggle="modal" data-target="#contactModal">Get in Touch</a>
@@ -58,7 +58,7 @@
             
             <div class="modal-content bviolet text-light">
                 <div class="modal-header">
-                    <h3 class="modal-title display-5 indiffrent">Message <strong>Dawn</strong></h3>
+                    <h3 class="modal-title display-5 cool">Message <strong>Dawn</strong></h3>
                     <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -94,12 +94,12 @@
                                             <i class="fa-regular fa-face-smile-beam fa-4x cool"></i>
                                             <i class="fa-regular fa-face-grin-hearts fa-4x love"></i>
                                         </div>
-                                    <input type="range" class="form-control-range mt-3" id="formControlRange">
+                                    <input type="range" class="form-control-range mt-3 cool" id="formControlRange">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-outline btn-sm ml-1">Send</button>
+                                <button type="button" class="btn btn-outline btn-sm ml-1"><strong>SEND</strong></button>
                             </div>
                         </form>
                     </div>
@@ -115,7 +115,7 @@
                 <h1><strong>Dawn</strong>Fós in Words</h1>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center">
             <div class="card ml-5 mb-5 bviolet softbox border-0" style="width: 18rem;">
                 <img class="card-img-top softbox border-0" src="images/top.jpeg" width="150px" height="auto" alt="Card image cap">
                 <div class="card-body">
@@ -124,7 +124,7 @@
                         <br>Name it Horus because you're ironic like that.</q> -Dawn</i></p>
                 </div>
             </div>
-            <div class="card col-sm-4  ml-5 footertwo text-light ">
+            <div class="card col-sm-4  ml-5 footertwo text-light mb-5">
                 <div class="card-body text-right">
                     <p class="mt-2">As Dawn remembers it, she was born on a Friday in the southern capital of Nashville. Biologically O positive, this may have influenced the cyclical moving through the continental US, that later ensued. Dawn can currently be found nestled among the verdant trees of TN. Living a life presently punctuated by the absence of sky and air you can chew.</p>
                     <p>Her four feral children can be seen echoing through her work. However, her dog has yet to be found. Synapsis coddling and beating against the ether prove fruitful in her artistic process. A process that currently explores concepts beyond her paygrade, executed in materials far exceeding her pocketbook. With evolutionary minded sensibilities, Dawn’s body of work is considered an expansive show of multidisciplinary research.</p>
@@ -137,7 +137,7 @@
         </div>
     </div>
 
-    <footer class="">
+    <footer class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -157,7 +157,7 @@
                                         <li><a class="text-light" href="#"> Bio</a></li>
                                         <li><a class="text-light" href="resume.html"> Resume</a></li>
                                         <li><a class="text-light" href="inspiration.html"> Inspiration</a></li>
-                                        <li><a class="text-light" href="bulletin.html"> Bulletin</a></li>
+                                        <!-- <li><a class="text-light" href="bulletin.html"> Bulletin</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@
                                 </div>
                                 <div class="collapse d-lg-flex" id="contact"  data-parent="#accordian">
                                     <ul class="list-unstyled d-flex w-100 text-center">
-                                        <li><a role="button" class="btn btn-link text-light" href="mailto:dawn.lee.fos@gmail.com"> dawn.lee.fos@gmail.com</a></li>
+                                        <li><a role="button" class="btn btn-link text-light" href="mailto:dawn@dawnfos.com"> dawn@dawnfos.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -201,7 +201,7 @@
         <div class="row footertwo">
             <div class="col-md-12">
                 <div class="d-flex justify-content-center align-items-center">
-                    <span class="p-1 text-muted"><small>Dawn Fós &copy; Copyright 2022</small></span>
+                    <span class="p-1 text-muted"><small>Dawn Fós &copy; Copyright <span id="date"></span>. All rights reserved</small></span>
                 </div>
             </div>
         </div>
@@ -212,7 +212,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

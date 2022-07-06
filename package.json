@@ -17,6 +17,7 @@
     "lite-server": "^2.6.1"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "bootstrap": "^4.6.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",

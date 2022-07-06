@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="css/styles.css" />
-        <link rel="icon" type="image.png" href="images/logo.png">
+        <link rel="icon" type="image/png" href="images/logo.png">
         <!-- endbuild -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fauna+One&family=Montserrat:wght@100;300;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap">
         <script src="https://kit.fontawesome.com/b53632fa3b.js" crossorigin="anonymous"></script>
@@ -66,24 +66,24 @@
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-sm-6 outline-warning">
-                                    <label class="sr-only" for="firstName">Name</label>
-                                    <input type="text" class="form-control form-control-sm" id="fullName" placeholder="Enter Name">
+                                    <label class="sr-only" for="name">Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="name" placeholder="Enter Name">
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label class="sr-only" for="email">Email</label>
-                                    <input type="email" class="form-control form-control-sm" id="userEmail" placeholder="Enter Email">
+                                    <input type="email" class="form-control form-control-sm" id="email" placeholder="Enter Email">
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label class="sr-only" for="phone">Telephone</label>
-                                    <input type="text" class="form-control form-control-sm" id="userNumber" placeholder="Enter Phone Number">
+                                    <label class="sr-only" for="number">Telephone</label>
+                                    <input type="text" class="form-control form-control-sm" id="number" placeholder="Enter Phone Number">
                                 </div>
                                 <div class="form-check text-right px-4">
-                                    <input type="checkbox" class="form-check-input" id="callCheck">
-                                    <label class="form-check-label" for="callCheck">Request a Call</label>
+                                    <input type="checkbox" class="form-check-input" id="call">
+                                    <label class="form-check-label" for="call">Request a Call</label>
                                 </div>
                                 <div class="form-group col-12">
                                     <label for="message">Message</label>
-                                    <textarea class="form-control" id="userMessage" rows="6" placeholder="Words of enlightenment here..."></textarea>
+                                    <textarea class="form-control" id="message" rows="6" placeholder="Words of enlightenment here..."></textarea>
                                 </div>
                                 <div class="form-group col-12">
                                     <label class="text-center" for="formControlRange">How much do you like armadillos?</label>
@@ -99,14 +99,46 @@
                             </div>
                             <div class="form-row">
                                 <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button onclick="sendmail()" type="button" class="btn btn-outline btn-sm ml-1"><strong>SEND</strong></button>
+                                <button onclick="sendmail()" type="button" class="btn btn-outline btn-sm ml-1"><a class="indiffrent" data-dismiss="modal" data-toggle="modal" href="#sucessModal"><strong>SEND</strong></a></button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+
+    <!-- sucessModal -->
+    <div id="sucessModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            
+            <div class="modal-content bviolet text-light">
+                <div class="modal-header">
+                    <h3 class="modal-title display-5 cool">Message <strong>Sent</strong></h3>
+                    <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col outline-warning ml-4">
+                                    <h2>We love making new friends!</h2>
+                                </div>
+                                <div class="form-group col">
+                                    <div class="d-flex offset-4 mr-4">
+                                        <i class="fa-regular fa-face-grin-hearts fa-8x indiffrent"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-outline btn-sm ml-1" data-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CONTENT -->
     <div class="container">
@@ -188,12 +220,19 @@
         </div>
     </div>
 
-    <!-- Script -->
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("_Jhys9gG5a2LmUQMU");
+        })();
+    </script>
+    
 </body>
 
 </html>
